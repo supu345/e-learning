@@ -19,11 +19,11 @@ export const DropdownLinks = [
   },
   {
     name: "Madrasa Facilities",
-    link: "/madrasa_facilities",
+    link: "/madrasa-facilities",
   },
   {
     name: "Mission & Vision",
-    link: "/mission_vision",
+    link: "/mission-vision",
   },
   {
     name: "Management",
@@ -34,7 +34,7 @@ export const DropdownLinks = [
 export const DropdownLinksAdmission = [
   {
     name: "Online Admission",
-    link: "/online-dmission",
+    link: "/online-admission",
   },
   {
     name: "Admission Procedure",

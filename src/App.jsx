@@ -22,11 +22,11 @@ function App() {
         <Route path="/login" element={<Login />} />;
         <Route path="/register" element={<Register />} />;
         <Route path="/about" element={<About />} />;
-        <Route path="/madrasa_facilities" element={<MadrasaFacilities />} />;
-        <Route path="/mission_vision" element={<MissionVision />} />;
+        <Route path="/madrasa-facilities" element={<MadrasaFacilities />} />;
+        <Route path="/mission-vision" element={<MissionVision />} />;
         <Route path="/management" element={<Management />} />;
         <Route path="/contact" element={<Contact />} />;
-        <Route path="/online-dmission" element={<OnlineAdmission />} />;
+        <Route path="/online-admission" element={<OnlineAdmission />} />;
         <Route path="/admission-procedure" element={<AdmissionProcedure />} />;
         <Route path="/tuition-fees" element={<TuitionFees />} />;
         <Route path="/photo-gallery" element={<PhotoGallery />} />;

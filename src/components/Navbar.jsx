@@ -49,102 +49,102 @@ const Navbar = () => {
               {NavbarMenu.map((item) => {
                 return (
                   <li key={item.id}>
-                    <a
-                      href={item.link}
+                    <Link
+                      to={item.link}
                       className="inline-block  text-sm xl:text-base py-1 px-2 xl:px-2 hover:text-green-600 transition-all duration-300 font-semibold"
                     >
                       {item.title}
-                    </a>
+                    </Link>
                   </li>
                 );
               })}
               <li className="group relative cursor-pointer">
-                <a
-                  href="/#home"
+                <Link
+                  to="/#home"
                   className="flex h-[72px] items-center font-semibold gap-[2px]"
                 >
                   About Us
                   <FaCaretDown className="transition-all duration-200 group-hover:rotate-180" />
-                </a>
+                </Link>
                 <div className="absolute -left-9 z-[9999] font-semibold hidden w-[200px] rounded-md bg-white p-2 text-black group-hover:block shadow-md">
                   <ul className="space-y-0">
                     {DropdownLinks.map((data) => (
                       <li key={data.name}>
-                        <a
+                        <Link
                           className="inline-block w-full rounded-md p-2 hover:text-green-600"
-                          href={data.link}
+                          to={data.link}
                         >
                           {data.name}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
                 </div>
               </li>
               <li className="group relative cursor-pointer">
-                <a
-                  href="/#home"
+                <Link
+                  to="/#home"
                   className="flex h-[72px] items-center font-semibold gap-[2px]"
                 >
                   Admission
                   <FaCaretDown className="transition-all duration-200 group-hover:rotate-180" />
-                </a>
+                </Link>
                 <div className="absolute -left-9 z-[9999] font-semibold hidden w-[220px] rounded-md bg-white p-2 text-black group-hover:block shadow-md">
                   <ul className="space-y-0">
                     {DropdownLinksAdmission.map((data) => (
                       <li key={data.name}>
-                        <a
+                        <Link
                           className="inline-block w-full rounded-md p-2 hover:text-green-600"
-                          href={data.link}
+                          to={data.link}
                         >
                           {data.name}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
                 </div>
               </li>
               <li className="group relative cursor-pointer">
-                <a
-                  href="/#home"
+                <Link
+                  to="/#home"
                   className="flex h-[72px] items-center font-semibold gap-[2px]"
                 >
                   Gallery
                   <FaCaretDown className="transition-all duration-200 group-hover:rotate-180" />
-                </a>
+                </Link>
                 <div className="absolute -left-9 z-[9999] font-semibold hidden w-[220px] rounded-md bg-white p-2 text-black group-hover:block shadow-md">
                   <ul className="space-y-0">
                     {DropdownLinksGallery.map((data) => (
                       <li key={data.name}>
-                        <a
+                        <Link
                           className="inline-block w-full rounded-md p-2 hover:text-green-600"
-                          href={data.link}
+                          to={data.link}
                         >
                           {data.name}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
                 </div>
               </li>
               <li className="group relative cursor-pointer">
-                <a
-                  href="/#home"
+                <Link
+                  to="/#home"
                   className="flex h-[72px] items-center font-semibold gap-[2px]"
                 >
                   Information
                   <FaCaretDown className="transition-all duration-200 group-hover:rotate-180" />
-                </a>
+                </Link>
                 <div className="absolute -left-9 z-[9999] font-semibold hidden w-[220px] rounded-md bg-white p-2 text-black group-hover:block shadow-md">
                   <ul className="space-y-0">
                     {DropdownLinksInformation.map((data) => (
                       <li key={data.name}>
-                        <a
+                        <Link
                           className="inline-block w-full rounded-md p-2 hover:text-green-600"
-                          href={data.link}
+                          to={data.link}
                         >
                           {data.name}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
