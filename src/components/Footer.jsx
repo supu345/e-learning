@@ -1,11 +1,16 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaTelegramPlane } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
 import { HiLocationMarker } from "react-icons/hi";
 import { MdComputer } from "react-icons/md";
 import FooterImg from "../../src/assets/footer.jpg";
 import { motion } from "framer-motion";
 import { SlideUp } from "../../src/utility/animation";
-
+import logo from "../../src/assets/logo.jpg";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
+import { IoMdMailOpen } from "react-icons/io";
 const FooterBg = {
   backgroundImage: `url(${FooterImg})`,
   backgroundRepeat: "no-repeat",
@@ -14,6 +19,7 @@ const FooterBg = {
 };
 
 const Footer = () => {
+  const [t, i18n] = useTranslation("global");
   return (
     <div style={FooterBg} className="rounded-t-3xl">
       <div className="bg-primary/5">
@@ -28,8 +34,17 @@ const Footer = () => {
             >
               <div className="py-8 px-4 space-y-4">
                 <div className="text-2xl flex items-center gap-2 font-bold uppercase">
-                  <MdComputer className="text-secondary text-4xl" />
-                  <p className="">E-Tutor</p>
+                  {/* <MdComputer className="text-secondary text-4xl" /> */}
+                  <Link to="/">
+                    <div className="text-xl flex items-center gap-2 font-bold">
+                      <img src={logo} alt="img" className="w-[60px] h-[60px]" />
+                      {/* <MdComputer className="text-3xl text-green-600" /> */}
+                      <div className="text-center">
+                        <p className="text-green-600">{t("header.Ekra")}</p>
+                        <p>{t("header.ELearning")}</p>
+                      </div>
+                    </div>
+                  </Link>
                 </div>
                 <p>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -37,18 +52,24 @@ const Footer = () => {
                   architecto voluptatum saepe ab.
                 </p>
                 <div className="flex items-center justify-start gap-5 !mt-6">
-                  <a href="#" className="hover:text-secondary duration-200">
-                    <HiLocationMarker className="text-3xl" />
-                  </a>
-                  <a href="#" className="hover:text-secondary duration-200">
-                    <FaInstagram className="text-3xl" />
-                  </a>
-                  <a href="#" className="hover:text-secondary duration-200">
-                    <FaFacebook className="text-3xl" />
-                  </a>
-                  <a href="#" className="hover:text-secondary duration-200">
-                    <FaLinkedin className="text-3xl" />
-                  </a>
+                  <Link
+                    to="https://www.facebook.com/profile.php?id=61571683171792"
+                    className="hover:text-secondary duration-200"
+                  >
+                    <FaFacebook className="text-3xl text-blue-600" />
+                  </Link>
+                  <Link
+                    to="https://www.youtube.com/@markazulimdadbangladesh"
+                    className="hover:text-secondary duration-200"
+                  >
+                    <FaYoutube className="text-3xl text-red-500" />
+                  </Link>
+                  <Link
+                    to="https://t.me/markazulimdadbangladesh"
+                    className="hover:text-secondary duration-200"
+                  >
+                    <FaTelegramPlane className="text-3xl text-blue-500" />
+                  </Link>
                 </div>
               </div>
             </motion.div>
@@ -68,24 +89,36 @@ const Footer = () => {
                   </h1>
                   <ul className="flex flex-col gap-3">
                     <li>
-                      <a href="#" className="hover:text-secondary duration-200">
+                      <Link
+                        to="#"
+                        className="hover:text-secondary duration-200"
+                      >
                         Home
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#" className="hover:text-secondary duration-200">
+                      <Link
+                        to="#"
+                        className="hover:text-secondary duration-200"
+                      >
                         About
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#" className="hover:text-secondary duration-200">
+                      <Link
+                        to="#"
+                        className="hover:text-secondary duration-200"
+                      >
                         Services
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#" className="hover:text-secondary duration-200">
+                      <Link
+                        to="#"
+                        className="hover:text-secondary duration-200"
+                      >
                         Login
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -103,24 +136,36 @@ const Footer = () => {
                   </h1>
                   <ul className="flex flex-col gap-3">
                     <li>
-                      <a href="#" className="hover:text-secondary duration-200">
+                      <Link
+                        to="#"
+                        className="hover:text-secondary duration-200"
+                      >
                         Home
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#" className="hover:text-secondary duration-200">
+                      <Link
+                        to="#"
+                        className="hover:text-secondary duration-200"
+                      >
                         About
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#" className="hover:text-secondary duration-200">
+                      <Link
+                        to="#"
+                        className="hover:text-secondary duration-200"
+                      >
                         Services
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#" className="hover:text-secondary duration-200">
+                      <Link
+                        to="#"
+                        className="hover:text-secondary duration-200"
+                      >
                         Login
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -133,28 +178,33 @@ const Footer = () => {
               >
                 <div className="py-8 px-4">
                   <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-5">
-                    Company Links
+                    Address
                   </h1>
                   <ul className="flex flex-col gap-3">
                     <li>
-                      <a href="#" className="hover:text-secondary duration-200">
+                      <Link
+                        to="/"
+                        className="hover:text-secondary duration-200"
+                      >
                         Home
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#" className="hover:text-secondary duration-200">
-                        About
-                      </a>
+                      <Link
+                        to="/"
+                        className="hover:text-secondary duration-200"
+                      >
+                        markazulimdadbangladesh@gmail.com
+                      </Link>
+                    </li>
+
+                    <li>
+                      <p className="hover:text-secondary duration-200">House</p>
                     </li>
                     <li>
-                      <a href="#" className="hover:text-secondary duration-200">
-                        Services
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="hover:text-secondary duration-200">
-                        Login
-                      </a>
+                      <p className="hover:text-secondary duration-200">
+                        District
+                      </p>
                     </li>
                   </ul>
                 </div>
