@@ -67,7 +67,7 @@ const Hero = () => {
             initial={{ opacity: 0, x: 200 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ type: "spring", stiffness: 100, delay: 0.2 }}
-            src={HeroImg}
+            src="https://images.pexels.com/photos/159775/library-la-trobe-study-students-159775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
             alt=""
             className="w-[300px] h-[400px] md:w-[500px] xl:w-[700px] rounded-2xl"
           />

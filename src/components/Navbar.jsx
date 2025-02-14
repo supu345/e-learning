@@ -33,9 +33,9 @@ const Navbar = () => {
           {/* Logo section */}
           <Link to="/">
             <div className="text-xl flex items-center gap-2 font-bold">
-              <img src={logo} alt="img" className="w-[60px] h-[60px]" />
-              {/* <MdComputer className="text-3xl text-green-600" /> */}
-              <div className="text-center">
+              {/* <img src={logo} alt="img" className="w-[60px] h-[60px]" /> */}
+              <MdComputer className="text-3xl text-green-600" />
+              <div className="text-center flex flex-row">
                 <p className="text-green-600">{t("header.Ekra")}</p>
                 <p>{t("header.ELearning")}</p>
               </div>
@@ -158,11 +158,11 @@ const Navbar = () => {
             <Link to="/login">
               <button className="font-semibold">Login</button>
             </Link>
-            <Link to="/register">
+            {/* <Link to="/register">
               <button className="text-white bg-green-600 font-semibold rounded-full px-6 py-2 ">
                 Register
               </button>
-            </Link>
+            </Link> */}
           </div>
           <div className="">
             <div>

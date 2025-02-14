@@ -12,7 +12,8 @@ import Testimonial from "../components/Testimonial";
 import Footer from "../components/Footer";
 
 const BannerData = {
-  image: Img1,
+  image:
+    "https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   tag: "CUSTOMIZE WITH YOUR SCHEDULE",
   title: "Personalized Professional Online Tutor on Your Schedule",
   subtitle:
@@ -21,7 +22,8 @@ const BannerData = {
 };
 
 const BannerData2 = {
-  image: Img2,
+  image:
+    "https://images.pexels.com/photos/764681/pexels-photo-764681.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   tag: "CUSTOMIZE WITH YOUR SCHEDULE",
   title: "Talented and Qualified Tutors to Serve You for Help",
   subtitle:

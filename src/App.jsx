@@ -22,7 +22,7 @@ function App() {
         <Route path="/login" element={<Login />} />;
         <Route path="/register" element={<Register />} />;
         <Route path="/about" element={<About />} />;
-        <Route path="/madrasa-facilities" element={<MadrasaFacilities />} />;
+        <Route path="/school-facilities" element={<MadrasaFacilities />} />;
         <Route path="/mission-vision" element={<MissionVision />} />;
         <Route path="/management" element={<Management />} />;
         <Route path="/contact" element={<Contact />} />;

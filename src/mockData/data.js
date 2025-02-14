@@ -18,8 +18,8 @@ export const DropdownLinks = [
     link: "/about",
   },
   {
-    name: "Madrasa Facilities",
-    link: "/madrasa-facilities",
+    name: "School Facilities",
+    link: "/School-facilities",
   },
   {
     name: "Mission & Vision",

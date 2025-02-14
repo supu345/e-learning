@@ -37,9 +37,9 @@ const Footer = () => {
                   {/* <MdComputer className="text-secondary text-4xl" /> */}
                   <Link to="/">
                     <div className="text-xl flex items-center gap-2 font-bold">
-                      <img src={logo} alt="img" className="w-[60px] h-[60px]" />
-                      {/* <MdComputer className="text-3xl text-green-600" /> */}
-                      <div className="text-center">
+                      {/* <img src={logo} alt="img" className="w-[60px] h-[60px]" /> */}
+                      <MdComputer className="text-3xl text-green-600" />
+                      <div className="text-center flex flex-row">
                         <p className="text-green-600">{t("header.Ekra")}</p>
                         <p>{t("header.ELearning")}</p>
                       </div>
@@ -52,22 +52,13 @@ const Footer = () => {
                   architecto voluptatum saepe ab.
                 </p>
                 <div className="flex items-center justify-start gap-5 !mt-6">
-                  <Link
-                    to="https://www.facebook.com/profile.php?id=61571683171792"
-                    className="hover:text-secondary duration-200"
-                  >
+                  <Link to="/" className="hover:text-secondary duration-200">
                     <FaFacebook className="text-3xl text-blue-600" />
                   </Link>
-                  <Link
-                    to="https://www.youtube.com/@markazulimdadbangladesh"
-                    className="hover:text-secondary duration-200"
-                  >
+                  <Link to="/" className="hover:text-secondary duration-200">
                     <FaYoutube className="text-3xl text-red-500" />
                   </Link>
-                  <Link
-                    to="https://t.me/markazulimdadbangladesh"
-                    className="hover:text-secondary duration-200"
-                  >
+                  <Link to="/" className="hover:text-secondary duration-200">
                     <FaTelegramPlane className="text-3xl text-blue-500" />
                   </Link>
                 </div>
@@ -194,7 +185,7 @@ const Footer = () => {
                         to="/"
                         className="hover:text-secondary duration-200"
                       >
-                        markazulimdadbangladesh@gmail.com
+                        example@gmail.com
                       </Link>
                     </li>
 
