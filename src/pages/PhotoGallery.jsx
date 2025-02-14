@@ -46,7 +46,7 @@ const PhotoGallery = () => {
               initial={{ opacity: 0, x: 200 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ type: "spring", stiffness: 100, delay: 0.2 }}
-              src={Img4}
+              src="https://images.pexels.com/photos/374820/pexels-photo-374820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
               alt="Img4"
               className="w-[300px] h-[300px] rounded-md"
             />
@@ -62,7 +62,7 @@ const PhotoGallery = () => {
               initial={{ opacity: 0, x: 200 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ type: "spring", stiffness: 100, delay: 0.2 }}
-              src={Img6}
+              src="https://images.pexels.com/photos/5428155/pexels-photo-5428155.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
               alt="Img6"
               className="w-[300px] h-[300px] rounded-md"
             />
